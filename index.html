@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+    <title>Correspondência Confidencial | Mikele</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- ETAPA 1: CORRESPONDÊNCIA -->
+
+        <section id="screenLetter" class="screen active">
+
+            <div class="top-label">
+                <span>🔒 ACESSO RESTRITO</span>
+                <span>PROTOCOLO 281126</span>
+            </div>
+
+            <div class="letter-card">
+
+                <div class="envelope-icon">✉</div>
+
+                <span class="small-label">CENTRAL DE COMUNICAÇÕES</span>
+
+                <h1>VOCÊ TEM UMA NOVA MENSAGEM.</h1>
+
+                <p class="subtitle">
+                    Uma correspondência que exige sua atenção imediata.
+                </p>
+
+                <div class="sender-box">
+                    <strong>REMETENTE: SIGILOSO</strong>
+                    <span>ASSUNTO: OPERAÇÃO ANIVERSÁRIO</span>
+                </div>
+
+                <button id="openLetter" class="open-button">
+                    ABRIR CORRESPONDÊNCIA ↗
+                </button>
+
+            </div>
+
+            <p class="instruction">
+                Clique para acessar o conteúdo confidencial.
+            </p>
+
+        </section>
+
+
+        <!-- ETAPA 2: CARTA E TERMOS -->
+
+        <section id="screenTerms" class="screen">
+
+            <div class="top-label">
+                <span>🔒 DOCUMENTO CONFIDENCIAL</span>
+                <span>ETAPA 02/03</span>
+            </div>
+
+            <div class="document-card">
+
+                <div class="document-header">
+                    <span>COMUNICADO OFICIAL</span>
+                    <span>CLASSIFICAÇÃO: SIGILOSO</span>
+                </div>
+
+                <h1>ATENÇÃO!</h1>
+
+                <h2>VOCÊ ESTÁ PRESTES A SE COMPROMETER.</h2>
+
+                <p class="terms-intro">
+                    Ao aceitar esta missão, você concorda com
+                    os seguintes termos:
+                </p>
+
+                <ul class="terms-list">
+                    <li>Comparecer com fome.</li>
+
+                    <li>
+                        Não perguntar o destino a cada
+                        5 minutos.
+                    </li>
+
+                    <li>
+                        Não tentar descobrir a surpresa.
+                    </li>
+
+                    <li>
+                        Levar bom humor (obrigatório).
+                    </li>
+
+                    <li>
+                        Reclamações deverão ser encaminhadas
+                        diretamente à organização. 😂
+                    </li>
+                </ul>
+
+                <p class="fine-print">
+                    Não há possibilidade de cancelamento
+                    por falta de curiosidade.
+                </p>
+
+                <div class="commitment">
+                    <label>
+                        <input type="checkbox" id="acceptTerms">
+
+                        Li os termos e estou ciente das minhas
+                        responsabilidades nesta missão.
+                    </label>
+                </div>
+
+                <button id="acceptMission" class="confirm-button" disabled>
+                    ACEITAR OS TERMOS E CONTINUAR
+                </button>
+
+            </div>
+
+            <p class="instruction">
+                Sua confirmação será registrada pela organização.
+            </p>
+
+        </section>
+
+
+        <!-- ETAPA 3: CONVITE OFICIAL -->
+
+        <section id="screenInvite" class="screen">
+
+            <div class="top-label">
+                <span>🔒 OPERAÇÃO AUTORIZADA</span>
+                <span>ETAPA 03/03</span>
+            </div>
+
+            <div class="invite-card">
+
+                <div class="approved">
+                    <span class="approved-dot"></span>
+                    ACESSO AUTORIZADO
+                </div>
+
+                <div class="stamp">MISSÃO<br>APROVADA</div>
+
+                <span class="small-label">CONVOCAÇÃO OFICIAL</span>
+
+                <h1><br>VOCÊ ESTÁ CONVOCADA!</h1>
+
+                <p class="invite-intro">
+                    Depois de analisar seu perfil, a organização
+                    decidiu que você é a pessoa ideal para esta missão.
+                </p>
+
+                <div class="red-divider"></div>
+
+                <h2>OPERAÇÃO: ANIVERSÁRIO</h2>
+
+                <p class="invite-description">
+                    Sua presença foi solicitada para uma ocasião
+                    especial. O objetivo é celebrar seu aniversário
+                    com boa comida, risadas e momentos inesquecíveis.
+                </p>
+
+                <div class="details">
+
+                    <div class="detail-item">
+                        <span>📅 DATA DA MISSÃO</span>
+                        <strong>28 DE NOVEMBRO DE 2026</strong>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>🕖 HORÁRIO DE APRESENTAÇÃO</span>
+                        <strong>19H00</strong>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>📍 DESTINO</span>
+                        <strong>INFORMAÇÃO CONFIDENCIAL 🤫</strong>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>🎯 OBJETIVO</span>
+                        <strong>COMEMORAR SEU ANIVERSÁRIO!</strong>
+                    </div>
+
+                </div>
+
+                <div class="countdown-area">
+
+                    <p>CONTAGEM REGRESSIVA PARA A MISSÃO</p>
+
+                    <div class="countdown">
+
+                        <div>
+                            <strong id="days">00</strong>
+                            <small>DIAS</small>
+                        </div>
+
+                        <div>
+                            <strong id="hours">00</strong>
+                            <small>HORAS</small>
+                        </div>
+
+                        <div>
+                            <strong id="minutes">00</strong>
+                            <small>MIN</small>
+                        </div>
+
+                        <div>
+                            <strong id="seconds">00</strong>
+                            <small>SEG</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONFIRMAÇÃO -->
+
+            <div class="response-card">
+
+                <h2>SUA RESPOSTA É OBRIGATÓRIA!</h2>
+
+                <p>
+                    A organização precisa receber sua confirmação oficial.
+                </p>
+
+                <a
+                    href="#"
+                    id="whatsappButton"
+                    class="whatsapp-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    ☏ ENVIAR ACEITE PELO WHATSAPP
+                </a>
+
+                <p class="message-label">
+                    Mensagem pré-preenchida:
+                </p>
+
+                <div class="message-preview">
+                    "Confirmo minha participação na Operação:
+                    Aniversário. Estou ciente de que o destino é
+                    confidencial e prometo comparecer com fome.
+                    Missão aceita! ❤️"
+                </div>
+
+            </div>
+
+
+            <!-- AVISO FINAL -->
+
+            <div class="warning-card">
+
+                <h2>⚠️ ATENÇÃO!</h2>
+
+                <h3>VOCÊ ESTÁ OFICIALMENTE COMPROMETIDA.</h3>
+
+                <p>
+                    Ao confirmar esta missão, você concorda em:
+                </p>
+
+                <ul>
+                    <li>Comparecer com fome.</li>
+                    <li>Não estragar a própria surpresa.</li>
+                    <li>Não chegar atrasada.</li>
+                    <li>Aproveitar cada segundo.</li>
+                </ul>
+
+                <p class="final-note">
+                    A organização agradece sua colaboração.
+                    Sua presença é muito importante! ❤️
+                </p>
+
+            </div>
+
+
+            <footer>
+            
+
+                <span>SETOR DE OPERAÇÕES ESPECIAIS</span>
+
+                <p class="signature">
+                    Com carinho, Tati.
+                </p>
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- CONTROLE DE MÚSICA -->
+
+    <button id="musicButton" class="music-button">
+        ♫ ATIVAR TRILHA SONORA
+    </button>
+
+    <audio id="backgroundMusic" loop>
+        <source src="assets/musica.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
